@@ -240,24 +240,67 @@
 
 // WAF to print all unique values in array
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void printUnique(int arr[], int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        for(int j = i+1; j<size ;j++){
-            if(arr[i] != arr[j]){
-                cout << arr[i] << " ";
-            }
-        }
-    }
-}
+// void printUnique(int arr[], int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         bool isUnique = true;
+//         for (int j = 0; j < size; j++)
+//         {
+//             if (i != j && arr[i] == arr[j])
+//             {
+//                 isUnique = false;
+//                 break;
+//             }
+//         }
+//         if (isUnique)
+//         {
+//             cout << arr[i] << " ";
+//         }
+//     }
+// }
 
-int main()
-{
-    int size = 6;
-    int arr[size] = {2, 3, 3, 1, 2, 5};
-    return 0;
-}
+// int main()
+// {
+//     int size = 6;
+//     int arr[size] = {2, 3, 4, 6, 7, 8, 3, 1, 2, 5};
+//     cout << "Unique no are : ";
+//     printUnique(arr, size);
+//     return 0;
+// }
+
+
+// WAF to print the intersection of two array
+
+// arr1 = [1,2,3,4,5], arr2=[1,6,7,8,2]
+
+// #include <iostream>
+// using namespace std;
+
+// void printIntersectNo(int arr1[], int arr2[],int size){
+//     for(int i = 0; i<size; i++){
+//         bool isInterSect = false;
+//         for(int j = 0; j<size ;j++){
+//             if(arr1[i] == arr2[j]){
+//                 isInterSect = true;
+//                 break;
+//             }
+//         }
+//         if(isInterSect){
+//             cout << arr1[i] << " " ;
+//         }
+//     }
+// }
+
+// int main(){
+
+//     int size = 7;
+//     int arr1[size] = {1,2,3,4,5,7}, arr2[size] = {2,3,4,6,7,8,1};
+//     printIntersectNo(arr1, arr2, size); 
+//     return 0;
+// }
+
+
