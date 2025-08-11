@@ -302,5 +302,3 @@
 //     printIntersectNo(arr1, arr2, size); 
 //     return 0;
 // }
-
-
